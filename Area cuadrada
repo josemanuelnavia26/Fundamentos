@@ -1,0 +1,19 @@
+#include <iostream>
+#include "conio.h"
+using namespace std;
+
+int main()
+{
+  float lado, Area;
+  cout<<"ingresar el lado"<< endl;
+  cin>>lado;
+  Area=lado*lado;
+  cout<<"el area es"<<endl;
+  cout<<"calcular"<<lado*lado<<endl;
+  
+  
+  
+  
+
+    return 0;
+}
