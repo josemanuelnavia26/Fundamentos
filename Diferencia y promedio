@@ -1,0 +1,35 @@
+#include "stdafx.h"
+#include <iostream>
+#include <conio.h>
+
+using namespace std;
+
+int main()
+{
+ float c1,c2,c3,promedio,may,men,diferencia;
+cout<<"ingresar cantidad"<<endl;
+cin>>c1;
+cout<<"ingresar cantidad"<<endl;
+cin>>c2;
+cout<<"ingresar cantidad"<<endl;
+cin>>c3;
+may=c1;
+men=c1;
+ if(may<c2)
+    may=c2;
+ if(men>c2)
+	men=c2;
+ if(may<c3)
+    may=c3;
+ if(men>c3)
+	men=c3;
+ diferencia=may-men;
+ promedio=(c1+c2+c3)/3;
+cout<<"la diferencia es"<<diferencia<<endl;
+cout<<"El promedio es"<<promedio<<endl;
+ 
+
+return 0;
+
+
+}
