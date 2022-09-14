@@ -1,0 +1,39 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "ctype.h"
+
+using namespace std;
+
+void main()
+{
+   char opcion;
+   do {
+     cout << endl;
+     cout << "C.-DO" << endl;
+     cout << "D.-RE "<< endl;
+     cout << "E.-MI" << endl;
+     cout << "F.-FA" << endl;
+	 cout << "G.-SOL" << endl;
+	 cout << "A.-LA" << endl;
+	 cout << "0.-salir" << endl;
+     cout << "Elige una opcion: " ;
+     cin >> opcion;
+	 opcion= toupper(opcion);
+
+   
+	
+
+     switch (opcion) {
+	    case 'C': cout<<"Do"<<endl;  break;
+	    case 'D': cout<<"Re"<<endl;  break;
+		case 'E': cout<<"Mi"<<endl;  break;
+		case 'F': cout<<"FA"<<endl;  break;
+		case 'G': cout<<"SOL"<<endl; break;
+	    case 'A': cout<<"LA"<<endl;  break;
+        case '0': cout<< "Salir"<<endl; break;
+	    default : cout<< "Opcion invalida" << endl; 
+     }
+   } while (opcion != '0');
+   getch();
+}
