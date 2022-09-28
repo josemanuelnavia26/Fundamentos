@@ -1,0 +1,42 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+
+using namespace std;
+
+bool base8(int numero);
+
+
+
+
+void main()
+{
+ int num;
+ cout<<"ingrese el numero"<<endl;
+ cin>>num;
+ if (base8(num)==true)
+	 cout<<"no esta en base 8"<<endl;
+ else
+	 cout<<"esta en base 8"<<endl;
+
+ getch();
+
+
+}
+bool base8(int numero)
+
+{
+	int d;
+	bool band;
+	while (numero>0){
+	d=numero%10;
+	numero=numero/10;
+	if ((d<0)||(d<=8)) {
+		band=true;
+		break;
+	}
+  }
+return band;
+
+}
