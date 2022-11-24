@@ -1,0 +1,31 @@
+#include "stdafx.h"
+#include <iostream>
+#include "math.h"
+#include "conio.h"
+
+using namespace std;
+
+int main ()
+{
+	int total,totalDescuento,cantidadC,precio,descuento;
+
+	cout<<"Por este mes todas nuestras camisas estan a 50bs, dependiendo de cuantas camisas lleve, le haremos un precio especial :) ";
+	cout<<"Por favor ingrese cuantas camisas va a llevar: ";
+	cin>>cantidadC;
+		
+		if (cantidadC>=3)
+			precio= cantidadC*50;
+			descuento= precio*0.30;
+			totalDescuento= precio - descuento;
+		if(cantidadC<=2)
+			precio= cantidadC*50;
+			descuento= precio*0.15;
+			totalDescuento= precio - descuento;
+
+	cout<<"El total a pagar con descuento es: "<<totalDescuento;
+
+
+
+	getch();
+
+}
