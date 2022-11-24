@@ -1,0 +1,39 @@
+#include "stdafx.h"
+#include <iostream>
+#include <conio.h>
+
+using namespace std;
+int main () 
+{
+	/*int numeros[] = {1,2,3,4,5};
+	int suma = 0;
+	int multiplicacion=1;
+
+
+	for (int i=0; i<5; i++){
+
+		suma += numeros [i];
+		multiplicacion = multiplicacion * numeros[i];
+	}
+	
+
+	cout<<"La suma de los elementos del vector es: "<<suma<<endl;
+	cout<<" La multiplicacion de los elementos es: "<<multiplicacion<<endl;*/
+
+	int numeros[100],n;
+
+	cout<<"Digite el numero de elementos que va a tener el arreglo: ";
+	cin>>n;
+
+	for (int i=0; i<n; i++){
+		cout<<" Digite un numero: ";
+		cin>>numeros[i];
+		}
+	for (int i=0; i<n; i++) {
+		cout<<i<<" --> "<<numeros[i]<<endl;
+	}
+
+	getch();
+	return 0;
+
+}
