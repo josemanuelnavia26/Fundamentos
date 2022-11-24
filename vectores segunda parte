@@ -1,0 +1,54 @@
+// vectores.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include <conio.h>
+
+#define MAX 100 //es una constante
+
+using namespace std;
+void cargar (int x[],int tam);
+void mostrar (int x[],int tam);
+float promedio (int x[],int tam);
+
+void main () 
+{
+	int n,suma=0, multiplicacion=1,numeros[MAX];
+	float prom;
+
+	cout<<"Ingrese el numero de elementos: ";
+	cin>>n;
+	cargar(numeros,n);
+	mostrar(numeros,n);
+	//tenemos dos alternativas, mostrar el promedio directamente o asignar a una variable
+	prom= promedio(numeros,n);
+	cout<<"el promedio es: "<<prom;
+
+
+
+	getch();
+
+}
+void cargar (int x[],int tam){
+	for(int i=0;i<tam;i++){
+		cout<<"Ingrese un valor: ";
+		cin>> x[i];
+}
+
+}
+
+void mostrar (int x[],int tam){
+	for (int i=0; i<tam; i++){
+		cout<<i<<" --> "<<x[i]<<endl;
+	}
+
+}
+
+float promedio (int x[],int tam){
+	float suma=0,prom;
+	for (int i=0; i<tam; i++){
+		suma=suma + x[i];
+		prom=suma/tam;
+	}
+	return prom;
