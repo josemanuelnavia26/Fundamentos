@@ -1,0 +1,39 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+
+using namespace std;
+
+//Declarar el prototipo de la funcion
+bool base8 (int numero);
+
+
+void main (){
+	int num;
+	bool band;
+	cout<<"Ingrese el numero: ";
+	cin>>num;
+	if (base8(num)==false)
+		cout<<"Esta en base 8";
+	else
+		cout<<"No esta en base 8";
+		getch ();
+	
+}
+
+//Declarar la funcion
+bool base8 (int numero)
+{
+	int digito;
+	bool band=false; //ejemplo del uso de la bandera
+	while (numero>0){
+		digito= numero%10;
+		numero=numero/10;
+		if ((digito<0)|| (digito>=8)){ // || es Or
+			band = true;
+			break;
+		}
+	}
+	return band;
+}
